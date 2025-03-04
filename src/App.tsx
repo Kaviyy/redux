@@ -76,9 +76,13 @@ const person = {
 // Shallow copy (address is still referenced)
 const updated = { 
     ...person, 
-    name: "mubima" 
+    address: {
+        ...person.address,  // Spread existing address properties
+        country: "Sinore" // Update country
+    },
+    name: "Mubima" // Update name
 };
-updated.address.country="sigapore"
+//updated.address.country="sigapore"
 console.log(updated); // { name: "mubima", address: { city: "Tuty", country: "India" } }
 
 person.name = "mubi"; // Modifying the original object
