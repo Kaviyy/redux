@@ -86,7 +86,7 @@ console.log(person); // { name: "mubi", address: { city: "Tuty", country: "India
 
 
 function App(){
-
+   return 1;
 }
 
 
